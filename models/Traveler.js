@@ -4,7 +4,7 @@ const Schema = mongoose.Schema;
 const TravelerSchema = new Schema({
     travelerId: Schema.Types.ObjectId,
     name: String,
-    lastLocation: [
+    coordinate: [
         {
             lat: Number,
             lng: Number
